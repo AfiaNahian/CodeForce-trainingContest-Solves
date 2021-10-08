@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-  unsigned long long a,b,c,d,e;
+  long long a,b,c,d,e;
   char x,y;
   cin>>a >>x >>b >>y >>c;
   if(x=='+')
@@ -17,7 +17,7 @@ int main()
           cout<<c<<'\n';
       }
   }
-  if(x=='-')
+  else if(x=='-')
   {
       if(a-b==c)
       {
@@ -29,7 +29,7 @@ int main()
           cout<<c<<'\n';
       }
   }
-  if(x=='*')
+  else if(x=='*')
   {
       if(a*b==c)
       {
@@ -41,7 +41,7 @@ int main()
           cout<<c<<'\n';
       }
   }
-  if(x=='/')
+  else if(x=='/')
   {
       if(a/b==c)
       {

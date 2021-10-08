@@ -3,17 +3,22 @@
 using namespace std;
 int main()
 {
-    unsigned long long a,b,c,d,e,f;
+    unsigned long long int a,b,c,d,e=0,f=0;
     cin>>a >>b >>c >>d;
+
     e=pow(a,b);
     f=pow(c,d);
     if(e>f)
     {
-        cout<<"YES";
+        cout<<"YES\n";
     }
-    else if(e==f||e<f)
+    else if(e==f)
     {
-        cout<<"NO";
+        cout<<"NO\n";
+    }
+    else if(e<f)
+    {
+        cout<<"NO\n";
     }
     return 0;
 }
